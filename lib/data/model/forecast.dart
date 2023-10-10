@@ -1,4 +1,6 @@
+import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:weather_app/l10n/l10n.dart';
 
 part 'forecast.freezed.dart';
 
@@ -34,36 +36,53 @@ class Weather with _$Weather {
       _$WeatherFromJson(json);
 }
 
-final weatherDescription = {
-  0: 'Clear sky',
-  1: 'Mainly clear, partly cloudy, and overcast',
-  2: 'Mainly clear, partly cloudy, and overcast',
-  3: 'Mainly clear, partly cloudy, and overcast',
-  45: 'Fog and depositing rime fog',
-  48: 'Fog and depositing rime fog',
-  51: 'Drizzle: Light, moderate, and dense intensity',
-  53: 'Drizzle: Light, moderate, and dense intensity',
-  55: 'Drizzle: Light, moderate, and dense intensity',
-  56: 'Freezing Drizzle: Light and dense intensity',
-  57: 'Freezing Drizzle: Light and dense intensity',
-  61: 'Rain: Slight, moderate and heavy intensity',
-  63: 'Rain: Slight, moderate and heavy intensity',
-  65: 'Rain: Slight, moderate and heavy intensity',
-  66: 'Freezing Rain: Light and heavy intensity',
-  67: 'Freezing Rain: Light and heavy intensity',
-  71: 'Snow fall: Slight, moderate, and heavy intensity',
-  73: 'Snow fall: Slight, moderate, and heavy intensity',
-  75: 'Snow fall: Slight, moderate, and heavy intensity',
-  77: 'Snow grains',
-  80: 'Rain showers: Slight, moderate, and violent',
-  81: 'Rain showers: Slight, moderate, and violent',
-  82: 'Rain showers: Slight, moderate, and violent',
-  85: 'Snow showers slight and heavy',
-  86: 'Snow showers slight and heavy',
-  95: 'Thunderstorm: Slight or moderate',
-  96: 'Thunderstorm with slight and heavy hail',
-  99: 'Thunderstorm with slight and heavy hail',
-};
+String weatherDescription(BuildContext context, int code) {
+  switch (code) {
+    case 0: // Clear sky
+      return context.l10n.weatherClearSky;
+    case 1: // Mainly clear, partly cloudy, and overcast
+    case 2:
+    case 3:
+      return context.l10n.weatherMainlyClear;
+    case 45: // Fog and depositing rime fog
+    case 48:
+      return context.l10n.weatherFog;
+    case 51: // Drizzle
+    case 53:
+    case 55:
+      return context.l10n.weatherDrizzle;
+    case 56: // Freezing drizzle
+    case 57:
+      return context.l10n.weatherFreezingDrizzle;
+    case 61: // Rain
+    case 63:
+    case 65:
+      return context.l10n.weatherRain;
+    case 66: // Freezing rain
+    case 67:
+      return context.l10n.weatherFreezingRain;
+    case 71: // Snow
+    case 73:
+    case 75:
+      return context.l10n.weatherSnow;
+    case 77: // Snow grains
+      return context.l10n.weatherSnowGrains;
+    case 80: // Rain showers
+    case 81:
+    case 82:
+      return context.l10n.weatherRainShowers;
+    case 85: // Snow showers
+    case 86:
+      return context.l10n.weatherSnowShowers;
+    case 95: // Thunderstorm
+      return context.l10n.weatherThunderstorm;
+    case 96: // Thunderstorm with hail
+    case 99:
+      return context.l10n.weatherThunderstormWithHail;
+    default:
+      return '';
+  }
+}
 
 final weatherIcon = {
   0: 'clear-day',

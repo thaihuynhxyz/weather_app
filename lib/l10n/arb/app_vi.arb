@@ -1,0 +1,63 @@
+{
+  "@@locale": "vi",
+  "weatherAppBarTitle": "Thời tiết",
+  "@weatherAppBarTitle": {
+    "description": "Văn bản thể hiện trong thanh giao diện của Trang Chính"
+  },
+  "weatherClearSky": "Trời quang",
+  "@weatherClearSky": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời quang"
+  },
+  "weatherMainlyClear": "Trời quang, mây rải rác và trời âm u",
+  "@weatherMainlyClear": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời quang, mây rải rác và trời âm u"
+  },
+  "weatherFog": "Sương mù và sương giá",
+  "@weatherFog": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời sương mù"
+  },
+  "weatherDrizzle": "Mưa phùn: nhẹ, vừa và mạnh",
+  "@weatherDrizzle": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa phùn"
+  },
+  "weatherFreezingDrizzle": "Mưa phùn đóng băng: nhẹ, vừa và mạnh",
+  "@weatherFreezingDrizzle": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa phùn đóng băng"
+  },
+  "weatherRain": "Mưa: nhẹ, vừa và mạnh",
+  "@weatherRain": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa"
+  },
+  "weatherFreezingRain": "Mưa đá: nhẹ và mạnh",
+  "@weatherFreezingRain": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa đá"
+  },
+  "weatherSnow": "Tuyết rơi: nhẹ, vừa và mạnh",
+  "@weatherSnow": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời tuyết rơi"
+  },
+  "weatherSnowGrains": "Tuyết rơi nhẹ",
+  "@weatherSnowGrains": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời tuyết rơi nhẹ"
+  },
+  "weatherRainShowers": "Mưa rào: nhẹ, vừa và mạnh",
+  "@weatherRainShowers": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa rào"
+  },
+  "weatherSnowShowers": "Mưa tuyết nhẹ và mạnh",
+  "@weatherSnowShowers": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời mưa tuyết"
+  },
+  "weatherThunderstorm": "Bão: nhẹ hoặc vừa",
+  "@weatherThunderstorm": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời bão"
+  },
+  "weatherThunderstormWithHail": "Bão kèm mưa đá nhẹ và mạnh",
+  "@weatherThunderstormWithHail": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi trời bão kèm mưa đá"
+  },
+  "noData": "Không có dữ liệu",
+  "@noData": {
+    "description": "Văn bản thể hiện trong Trang Thời tiết khi không có dữ liệu"
+  }
+}

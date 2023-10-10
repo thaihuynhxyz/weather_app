@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:weather_app/data/model/forecast.dart';
 import 'package:weather_app/data/repository/location_repository.dart';
+import 'package:weather_app/l10n/l10n.dart';
 import 'package:weather_app/weather/weather_provider.dart';
 
 /// Flutter code sample for pinned [SearchAnchor] while scrolling.
@@ -12,20 +13,16 @@ class WeatherPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        useMaterial3: true,
-        colorSchemeSeed: const Color(0xff6750a4),
+    final l10n = context.l10n;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(l10n.weatherAppBarTitle),
       ),
-      home: const Scaffold(
-        body: SafeArea(
-          child: CustomScrollView(
-            slivers: <Widget>[
-              _AppBar(),
-              _Body(),
-            ],
-          ),
-        ),
+      body: const CustomScrollView(
+        slivers: <Widget>[
+          _AppBar(),
+          _Body(),
+        ],
       ),
     );
   }
@@ -93,12 +90,14 @@ class _Body extends ConsumerWidget {
         child: ref.watch(weatherProvider).when(
               data: (data) {
                 if (data == null) {
-                  return const Center(
-                    child: Text('No data'),
+                  return Center(
+                    child: Text(context.l10n.noData),
                   );
                 }
-                final description =
-                    weatherDescription[data.currentWeather.weathercode];
+                final description = weatherDescription(
+                  context,
+                  data.currentWeather.weathercode,
+                );
                 final icon = weatherIcon[data.currentWeather.weathercode];
                 return Column(
                   children: [
@@ -109,7 +108,7 @@ class _Body extends ConsumerWidget {
                     ),
                     const SizedBox(height: 16),
                     Text(
-                      description ?? 'Unknown',
+                      description,
                       style: textTheme.headlineMedium,
                       textAlign: TextAlign.center,
                     ),

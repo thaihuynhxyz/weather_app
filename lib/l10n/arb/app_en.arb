@@ -1,7 +1,63 @@
 {
-    "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+  "@@locale": "en",
+  "weatherAppBarTitle": "Weather",
+  "@weatherAppBarTitle": {
+    "description": "Text shown in the AppBar of the Weather Page"
+  },
+  "weatherClearSky": "Clear sky",
+  "@weatherClearSky": {
+    "description": "Text shown in the Weather Page when the weather is clear"
+  },
+  "weatherMainlyClear": "Mainly clear, partly cloudy, and overcast",
+  "@weatherMainlyClear": {
+    "description": "Text shown in the Weather Page when the weather is mainly clear"
+  },
+  "weatherFog": "Fog and depositing rime fog",
+  "@weatherFog": {
+    "description": "Text shown in the Weather Page when the weather is foggy"
+  },
+  "weatherDrizzle": "Drizzle: Light, moderate, and dense intensity",
+  "@weatherDrizzle": {
+    "description": "Text shown in the Weather Page when the weather is drizzling"
+  },
+  "weatherFreezingDrizzle": "Freezing drizzle: Light, moderate, and dense intensity",
+  "@weatherFreezingDrizzle": {
+    "description": "Text shown in the Weather Page when the weather is freezing drizzling"
+  },
+  "weatherRain": "Rain: Light, moderate, and heavy intensity",
+  "@weatherRain": {
+    "description": "Text shown in the Weather Page when the weather is raining"
+  },
+  "weatherFreezingRain": "Freezing Rain: Light and heavy intensity",
+  "@weatherFreezingRain": {
+    "description": "Text shown in the Weather Page when the weather is freezing raining"
+  },
+  "weatherSnow": "Snow fall: Slight, moderate, and heavy intensity",
+  "@weatherSnow": {
+    "description": "Text shown in the Weather Page when the weather is snowing"
+  },
+  "weatherSnowGrains": "Snow grains",
+  "@weatherSnowGrains": {
+    "description": "Text shown in the Weather Page when the weather is snow grains"
+  },
+  "weatherRainShowers": "Rain showers: Slight, moderate, and violent",
+  "@weatherRainShowers": {
+    "description": "Text shown in the Weather Page when the weather is raining showers"
+  },
+  "weatherSnowShowers": "Snow showers slight and heavy",
+  "@weatherSnowShowers": {
+    "description": "Text shown in the Weather Page when the weather is snowing showers"
+  },
+  "weatherThunderstorm": "Thunderstorm: Slight or moderate",
+  "@weatherThunderstorm": {
+    "description": "Text shown in the Weather Page when the weather is thunderstorming"
+  },
+  "weatherThunderstormWithHail": "Thunderstorm with slight and heavy hail",
+  "@weatherThunderstormWithHail": {
+    "description": "Text shown in the Weather Page when the weather is thunderstorming with hail"
+  },
+  "noData": "No data",
+  "@noData": {
+    "description": "Text shown in the Weather Page when there is no data"
+  }
 }
